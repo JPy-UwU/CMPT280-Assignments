@@ -1,0 +1,230 @@
+// Mark Cantuba
+// MJC862
+// 11214496
+
+*** Output for Regression test of AVLTree Class ***
+
+--------------------------------------------------------------------------------------------
+****Inserting to form an RR Imbalance on root Node****
+Item: 20  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 42  | Height: 1 | Left Height: 0 | Right Height: 0
+
+     2: 42
+1: 20
+     2: 10
+--------------------------------------------------------------------------------------------
+**** Performing Series of insertion that results to Left-Right imbalance ****
+Item: 20  | Height: 3 | Left Height: 1 | Right Height: 2
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 40  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 32  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 42  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 42
+     2: 40
+          3: 32
+1: 20
+     2: 10
+--------------------------------------------------------------------------------------------
+**** Performing Series of insertion that results to Left-Left imbalance ****
+Item: 20  | Height: 3 | Left Height: 2 | Right Height: 2
+Item: 5  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 2  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 40  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 32  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 42  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 42
+     2: 40
+          3: 32
+1: 20
+          3: 10
+     2: 5
+          3: 2
+--------------------------------------------------------------------------------------------
+**** Performing Series of insertion that results to Right-Left imbalance ****
+Item: 20  | Height: 4 | Left Height: 3 | Right Height: 2
+Item: 5  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 3  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 2  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 40  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 32  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 42  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 42
+     2: 40
+          3: 32
+1: 20
+          3: 10
+     2: 5
+               4: 4
+          3: 3
+               4: 2
+--------------------------------------------------------------------------------------------
+**** Performing Series of insertion that will create a right degenerate tree ****
+Item: 4  | Height: 4 | Left Height: 2 | Right Height: 3
+Item: 2  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 1  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 3  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 3 | Left Height: 1 | Right Height: 2
+Item: 5  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 8  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 7  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 1 | Left Height: 0 | Right Height: 0
+
+               4: 9
+          3: 8
+               4: 7
+     2: 6
+          3: 5
+1: 4
+          3: 3
+     2: 2
+          3: 1
+--------------------------------------------------------------------------------------------
+**** Performing Series of insertion that will create a Left degenerate tree ****
+Item: 7  | Height: 4 | Left Height: 3 | Right Height: 2
+Item: 5  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 3  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 2  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 10
+     2: 9
+          3: 8
+1: 7
+          3: 6
+     2: 5
+               4: 4
+          3: 3
+               4: 2
+--------------------------------------------------------------------------------------------
+**** Performing insertion to which item to be inserted is already in the tree ****
+
+Item: 7  | Height: 4 | Left Height: 3 | Right Height: 2
+Item: 5  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 3  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 2  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 10
+     2: 9
+          3: 8
+1: 7
+          3: 6
+     2: 5
+               4: 4
+          3: 3
+               4: 2
+--------------------------------------------------------------------------------------------
+                    **** Testing Delete and has() methods ****
+--------------------------------------------------------------------------------------------
+**** Testing deletion on nodes with no children (Using leftDegenerate Tree) ****
+Item: 7  | Height: 4 | Left Height: 3 | Right Height: 2
+Item: 5  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 3  | Height: 2 | Left Height: 0 | Right Height: 1
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 10
+     2: 9
+          3: 8
+1: 7
+          3: 6
+     2: 5
+               4: 4
+          3: 3
+               4: -
+--------------------------------------------------------------------------------------------
+**** Testing deletion on nodes with 1 child on the right node (Using leftDegenerate Tree) ****
+Item: 7  | Height: 3 | Left Height: 2 | Right Height: 2
+Item: 5  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 10  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 10
+     2: 9
+          3: 8
+1: 7
+          3: 6
+     2: 5
+          3: 4
+--------------------------------------------------------------------------------------------
+**** Testing deletion on nodes with 2 child on the left node (Using leftDegenerate Tree) ****
+Item: 7  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 5  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+
+     2: 8
+1: 7
+          3: 6
+     2: 5
+          3: 4
+--------------------------------------------------------------------------------------------
+**** Testing deletion on nodes with 2 children (Using rightDegenerate Tree) ****
+Item: 6  | Height: 3 | Left Height: 2 | Right Height: 2
+Item: 2  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 1  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 3  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 7  | Height: 2 | Left Height: 0 | Right Height: 1
+Item: 9  | Height: 1 | Left Height: 0 | Right Height: 0
+
+          3: 9
+     2: 7
+          3: -
+1: 6
+          3: 3
+     2: 2
+          3: 1
+--------------------------------------------------------------------------------------------
+**** Deleting all items on the left (Using rightDegenerate Tree) ****
+Item: 7  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 9  | Height: 1 | Left Height: 0 | Right Height: 0
+
+     2: 9
+1: 7
+     2: 6
+--------------------------------------------------------------------------------------------
+**** Deleting all items (Using rightDegenerate Tree) ****
+
+1: -
+--------------------------------------------------------------------------------------------
+**** Performing deletion to item that isn't in the tree ****
+
+Item: 7  | Height: 3 | Left Height: 2 | Right Height: 1
+Item: 5  | Height: 2 | Left Height: 1 | Right Height: 1
+Item: 4  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 6  | Height: 1 | Left Height: 0 | Right Height: 0
+Item: 8  | Height: 1 | Left Height: 0 | Right Height: 0
+
+     2: 8
+1: 7
+          3: 6
+     2: 5
+          3: 4
+--------------------------------------------------------------------------------------------
+                    **** Regression Test Complete ****
+--------------------------------------------------------------------------------------------
+
+Process finished with exit code 0

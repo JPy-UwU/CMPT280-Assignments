@@ -1,0 +1,29 @@
+16
+1,Steal a Treat from the Donut Witch's Garden,Blue Plains,250
+2,Recover the Stolen Items from the Door Lord,The Sandylands,700
+3,Defeat Goliad,Candy Kingdom,2578
+4,Gain Approximate Knowledge of Many Things,Demon Cat Lair,1000
+5,Atone for Shoko's Sins,Finn's Treehouse,2700
+6,Make an Amazing Sandwich,Finn's Treehouse,1900
+7,Find the Ice King's Wizard Eye,Ice Kingdom,12000
+8,Get some pickles from Prismo,Prismo's Home,150
+9,Rescue Wildberry Princess from the Ice King,Ice Kingdom,4200
+10,Win Wizard Battle,Wizard Battle Arena,29000
+11,Eat Marceline's Fries,Marceline's House,50
+12,Rescue Marceline from the Nightosphere,The Nightosphere,25000
+13,Discover Peppermint Butler's Secrets,Candy Kingdom,14550
+14,Defeat the Ice King's Penguin Army,Candy Kingdom,50000
+15,Discover the Ice King's Secret Past,The Past,3299
+16,Watch what Beemo Does When He Is Alone,Finn's Treehouse,70
+16,1
+1,14
+7,2
+15,2
+5,2
+11,15
+12,11
+3,5
+8,6
+13,10
+12,10
+7,12

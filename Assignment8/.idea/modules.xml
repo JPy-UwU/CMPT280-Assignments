@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kruskal-Template/Kruskal-Template.iml" filepath="$PROJECT_DIR$/Kruskal-Template/Kruskal-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RadixSortMSD-Template/RadixSortMSD-Template.iml" filepath="$PROJECT_DIR$/RadixSortMSD-Template/RadixSortMSD-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib280-asn8/lib280-asn8.iml" filepath="$PROJECT_DIR$/lib280-asn8/lib280-asn8.iml" />
+    </modules>
+  </component>
+</project>

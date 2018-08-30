@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignment5.iml" filepath="$PROJECT_DIR$/.idea/Assignment5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuestLog-Template/QuestLog-Template.iml" filepath="$PROJECT_DIR$/QuestLog-Template/QuestLog-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib280-asn5/lib280-asn5.iml" filepath="$PROJECT_DIR$/lib280-asn5/lib280-asn5.iml" />
+    </modules>
+  </component>
+</project>

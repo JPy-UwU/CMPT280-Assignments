@@ -1,0 +1,13 @@
+*** Stuff that needs to be tested ***
+BLList
+- insertFirst(I x) *
+- insertLast(I x) *
+- deleteItem()
+- deleteFirst()
+- deleteLast()
+- goLast() *
+- goBack() *
+
+BLL Iterator
+- goLast()
+- goBack()

@@ -1,0 +1,46 @@
+// Mark Cantuba
+// MJC862
+// 11214496
+ _____________________
+| Part E, Q2 answers  |
+ 
+Q1. 
+
+**********************************************************************************************
+**   Filename      **    Avg. Queries for hashQuestLog   **   Avg. Queries for treeQuestLog **
+**********************************************************************************************
+**  quests4.csv    **                1.25                **               2.0               **
+**********************************************************************************************
+**  quest16.csv    **                1.125               **               4.0               **
+**********************************************************************************************
+** quests250.csv   **                1.232               **              13.34              **
+**********************************************************************************************
+** quests1000.csv  **                2.148               **              18.08              **                      
+**********************************************************************************************
+** quest100000.csv **               1.45367              **             30.8778             **
+**********************************************************************************************
+
+
+Q2.
+    - around logn
+
+
+Q3.
+    - around n^2logn
+
+Q4.
+    - If we were to display all quests in alphabetical order, treeQuestLog will be more
+      viable since the toString() method of this version iterates through the tree in order
+      and is much more efficient because we do not require to check for the keys stored
+      in our treeQuestLog, while we do on hashQuestLog (hashQuestLog requires us to get
+      all the keys contained in our hash table, then sort it. Obtaining items in hashQuestLog
+      is constant, so can be ommitted. On the other hand, treeQuestLog is already sorted
+      based on key value)
+
+Q5.
+    - For displaying the quest log in no particular order, we can just use the hash quest log 
+      without the sorting part in its toString method. The keys() method is viable for obtaining
+      all keys obtained in the hashTable. We do not have to search through the entire array, since
+      once we convert the key to index, we can just iterate through the linked list in that index,
+      while if we use a tree, we might end up searching the entire tree if we end up with a degenerate
+      tree.

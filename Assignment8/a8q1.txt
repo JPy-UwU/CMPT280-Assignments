@@ -1,0 +1,29 @@
+// Mark Cantuba
+// MJC862
+// 11214496
+
+*** Timing Analysis for RadixSortMSD ***
+
+= test A - 50 words =
+Done reading 50 words.
+Sorted 50 strings in 0.140191ms
+
+= test B - 100 words =
+Done reading 100 words.
+Sorted 100 strings in 0.244298ms
+
+= test C - 1000 words =
+Done reading 1000 words.
+Sorted 1000 strings in 1.68448ms
+
+= test D - 10000 words =
+Done reading 10000 words.
+Sorted 10000 strings in 12.504014ms
+
+= test E - 50000 words =
+Done reading 50000 words.
+Sorted 50000 strings in 40.899287ms
+
+= test F - 236884 words =
+Done reading 235884 words.
+Sorted 235884 strings in 106.900467ms
